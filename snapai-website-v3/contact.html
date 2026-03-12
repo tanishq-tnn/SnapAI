@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Contact - SnapAI</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<a href="index.html" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
+<img src="logo.jpeg" alt="SnapAI Logo" class="logo-img">
+<h2>SnapAI</h2>
+</a>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="tools.html">Tools</a>
+<a href="categories.html">Categories</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="saved" onclick="toggleSaved()">
+🔖 Saved <span id="savedCount" class="saved-count">0</span>
+</div>
+
+</header>
+
+
+<section class="page">
+
+<h1>Contact Us</h1>
+
+<p>Have a tool to suggest or a question? We would love to hear from you.</p>
+
+<form id="contactForm">
+
+<input type="text" id="name" placeholder="Your Name" required>
+
+<input type="email" id="email" placeholder="Your Email" required>
+
+<input type="text" id="toolname" placeholder="Tool Name (if suggesting one)">
+
+<textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+
+<div class="saved-panel" id="savedPanel">
+<div class="saved-header">
+<h3>Saved Tools</h3>
+<button class="close-saved" onclick="toggleSaved()">✖</button>
+</div>
+<ul id="savedItems"></ul>
+<div class="saved-footer">
+<button onclick="clearSaved()" class="clear-saved">Clear All</button>
+</div>
+</div>
+
+
+<footer>
+<div class="footer-container">
+
+<div class="footer-col">
+<h3 class="logo">SnapAI</h3>
+<p>Helping people discover the right AI tools for every task, faster.</p>
+<div class="social-icons">
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-github"></i></a>
+</div>
+</div>
+
+<div class="footer-col">
+<h4>Quick Links</h4>
+<a href="index.html">Home</a>
+<a href="tools.html">Tools</a>
+<a href="categories.html">Categories</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<div class="footer-col">
+<h4>Categories</h4>
+<a href="tools.html">Writing</a>
+<a href="tools.html">Image</a>
+<a href="tools.html">Coding</a>
+<a href="tools.html">Video</a>
+</div>
+
+<div class="footer-col">
+<h4>Contact</h4>
+<p>Email: hello@snapai.com</p>
+<p>Location: Mumbai, India</p>
+</div>
+
+</div>
+<div class="footer-bottom">
+<p>© 2026 SnapAI | Search • Discover • Build</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

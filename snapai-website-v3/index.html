@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>SnapAI - Find the Right AI Tool</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<a href="index.html" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
+<img src="logo.jpeg" alt="SnapAI Logo" class="logo-img">
+<h2>SnapAI</h2>
+</a>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="tools.html">Tools</a>
+<a href="categories.html">Categories</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<div class="saved" onclick="toggleSaved()">
+🔖 Saved <span id="savedCount" class="saved-count">0</span>
+</div>
+
+</header>
+
+
+<section class="hero">
+
+<h1>Find the Right AI Tool</h1>
+
+<p>Stop wasting time testing random tools. Search from 200+ AI tools and find exactly what you need.</p>
+
+<input type="text" id="heroSearch" placeholder="Search AI tools..." onkeydown="heroRedirect(event)">
+
+<button onclick="window.location.href='tools.html'">Browse All Tools</button>
+
+</section>
+
+
+<section class="page">
+
+<h1>Why SnapAI?</h1>
+
+<p>We help students, creators and developers find the right AI tool for any task.</p>
+
+<div class="card-container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=400" alt="AI Tools">
+<h3>200+ AI Tools</h3>
+<p>Curated list of tools across writing, coding, image, video, audio and more.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=400" alt="Filter">
+<h3>Filter by Category</h3>
+<p>Find tools by what you want to do. No more endless scrolling through reviews.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400" alt="Pricing">
+<h3>Free & Paid Labels</h3>
+<p>Every tool shows its pricing. Know what's free, freemium or paid before you visit.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="page" style="background: white;">
+
+<h1>How It Works</h1>
+
+<p>Three simple steps to find your perfect AI tool.</p>
+
+<div class="card-container">
+
+<div class="card" style="padding-bottom: 20px;">
+<div style="font-size: 40px; padding: 20px 0 5px;">🔍</div>
+<h3>1. Search</h3>
+<p>Type what you want to do — write content, generate images, fix code, transcribe audio.</p>
+</div>
+
+<div class="card" style="padding-bottom: 20px;">
+<div style="font-size: 40px; padding: 20px 0 5px;">🏷️</div>
+<h3>2. Filter</h3>
+<p>Use category filters to narrow results. Compare pricing and features side by side.</p>
+</div>
+
+<div class="card" style="padding-bottom: 20px;">
+<div style="font-size: 40px; padding: 20px 0 5px;">🚀</div>
+<h3>3. Go</h3>
+<p>Click Visit to go directly to the tool. No account needed on our side.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<div class="saved-panel" id="savedPanel">
+<div class="saved-header">
+<h3>Saved Tools</h3>
+<button class="close-saved" onclick="toggleSaved()">✖</button>
+</div>
+<ul id="savedItems"></ul>
+<div class="saved-footer">
+<button onclick="clearSaved()" class="clear-saved">Clear All</button>
+</div>
+</div>
+
+
+<footer>
+<div class="footer-container">
+
+<div class="footer-col">
+<h3 class="logo">SnapAI</h3>
+<p>Helping people discover the right AI tools for every task, faster.</p>
+<div class="social-icons">
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-linkedin"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-github"></i></a>
+</div>
+</div>
+
+<div class="footer-col">
+<h4>Quick Links</h4>
+<a href="index.html">Home</a>
+<a href="tools.html">Tools</a>
+<a href="categories.html">Categories</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<div class="footer-col">
+<h4>Categories</h4>
+<a href="tools.html">Writing</a>
+<a href="tools.html">Image</a>
+<a href="tools.html">Coding</a>
+<a href="tools.html">Video</a>
+</div>
+
+<div class="footer-col">
+<h4>Contact</h4>
+<p>Email: hello@snapai.com</p>
+<p>Location: Mumbai, India</p>
+</div>
+
+</div>
+<div class="footer-bottom">
+<p>© 2026 SnapAI | Search • Discover • Build</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
